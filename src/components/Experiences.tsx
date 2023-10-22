@@ -3,9 +3,14 @@ import "./Experiences.css";
 const Experiences = () => {
   return (
     <div className="cards__wrapper">
-        <Card />
-        <Card />
-        <Card />
+        <Card 
+            badge="SOLD OUT"
+        />
+        <Card 
+            badge="ONLINE"
+            />
+        <Card 
+            />
     </div>
   )
 }
