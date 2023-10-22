@@ -3,7 +3,10 @@ import "./Navbar.css";
 const Navbar = (): JSX.Element => {
   return (
     <nav className="navbar__container">
-      <Logo />
+      <div className="navbar__content">
+         <Logo />
+      </div>
+     
     </nav>
   );
 };

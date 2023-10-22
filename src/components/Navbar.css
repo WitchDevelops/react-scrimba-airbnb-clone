@@ -14,3 +14,8 @@
   width: 100%;
   z-index: 2;
 }
+.navbar__content {
+  width: 100%;
+  max-width: var(--app-width);
+  margin: auto;
+}

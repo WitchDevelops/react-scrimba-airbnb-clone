@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Main from "./components/Main";
 import "./App.css";
 const App = (): JSX.Element => {
   return (
     <div className="app__container">
       <Navbar />
-      <Hero />
+      <Main />
     </div>
   );
 };
