@@ -1,5 +1,7 @@
 :root {
   --app-width: 650px;
+  --grey-500: #918E9B;
+  --grey-800: #222;
 }
 * {
   margin: 0;
