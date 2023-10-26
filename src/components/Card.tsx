@@ -1,19 +1,43 @@
 import "./Card.css";
-const Card = (props: any) => {
+
+type CardProps = {
+  item: {
+    id: number;
+    title: string;
+    description: string;
+    price: number;
+    coverImg: string;
+    stats: {
+      rating: number;
+      reviewCount: number;
+    };
+    location: string;
+    openSpots: number;
+  };
+};
+
+const Card: React.FC<CardProps> = (props) => {
+  let badgeText;
+  if (props.item.openSpots === 0) {
+    badgeText="SOLD OUT";
+  } else if (props.item.location === "Online") {
+    badgeText="ONLINE";
+  }
+
   return (
     <figure className="card__container">
-        <img className="card__image" src="/src/assets/exp-1.jpg">
+        <img className="card__image" src={`/src/assets/${props.item.coverImg}`}>
         </img>
-        <p className="badge">{props.badge}</p>
+        {badgeText && <p className="card__badge">{badgeText}</p>}
         <figcaption className="card__info">
             <div className="rating__container">
                 <img className="rating__icon" src="/src/assets/star.svg"></img>
-                <p className="rating__value">5.0</p>
-                <p className="rating__number">(6)</p>&#x2022;
-                <p className="rating__location">USA</p>
+                <p className="rating__value">{props.item.stats.rating}</p>
+                <p className="rating__number">({props.item.stats.reviewCount})</p>&#x2022;
+                <p className="rating__location">{props.item.location}</p>
             </div>
-            <p className="card__title">Life lessons with Katie Zaferes</p>
-            <p className="card__price"><strong className="card__price--strong">From $136</strong>/ person</p>
+            <p className="card__title">{props.item.title}</p>
+            <p className="card__price"><strong className="card__price--strong">From ${props.item.price}</strong>/ person</p>
         </figcaption>
     </figure>
   )
