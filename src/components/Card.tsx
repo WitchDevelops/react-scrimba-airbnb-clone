@@ -1,3 +1,4 @@
+import star from "/src/assets/star.svg";
 import "./Card.css";
 
 type CardProps = {
@@ -31,7 +32,7 @@ const Card: React.FC<CardProps> = (props) => {
         {badgeText && <p className="card__badge">{badgeText}</p>}
         <figcaption className="card__info">
             <div className="rating__container">
-                <img className="rating__icon" src="/src/assets/star.svg"></img>
+                <img className="rating__icon" src={star}></img>
                 <p className="rating__value">{props.item.stats.rating}</p>
                 <p className="rating__number">({props.item.stats.reviewCount})</p>&#x2022;
                 <p className="rating__location">{props.item.location}</p>
