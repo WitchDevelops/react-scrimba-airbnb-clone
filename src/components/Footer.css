@@ -1,0 +1,36 @@
+.footer__wrapper {
+    background-color: var(--grey-100);
+    display: flex;
+    flex-direction: column;
+    
+    padding-inline: 80px;
+}
+
+.footer__categories {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    column-gap: 8px;
+    padding-block: 48px;
+    margin-inline: 12px;
+}
+.category__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+    gap: 12px;
+}
+.category__title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-bottom: 12px;
+}
+.category__item {
+    font-size: 14px;
+    line-height: 1.43;
+    color: var(--grey-800);
+}
+
+.footer__wrapper a {
+    text-decoration: none;
+}
