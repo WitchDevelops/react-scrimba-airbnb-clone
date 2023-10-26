@@ -1,6 +1,6 @@
-import exp1 from "./assets/exp-1.jpg";
-import exp2 from "./assets/exp-2.jpg";
-import exp3 from "./assets/exp-3.jpg";
+import exp1 from "./assets/exp-1.webp";
+import exp2 from "./assets/exp-2.webp";
+import exp3 from "./assets/exp-3.webp";
 
 type StatsType = {
     rating: number;

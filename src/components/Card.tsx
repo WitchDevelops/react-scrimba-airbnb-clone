@@ -25,7 +25,6 @@ const Card: React.FC<CardProps> = (props) => {
   } else if (props.item.location === "Online") {
     badgeText = "ONLINE";
   }
-
   return (
     <figure className="card__container">
         <img className="card__image" 
