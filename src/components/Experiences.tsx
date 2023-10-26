@@ -1,20 +1,11 @@
 import Card from "./Card";
-import data from "../data.ts";
+import data from "../../public/data.ts";
 import "./Experiences.css";
 const Experiences = () => {
-  const cards = data.map(item => {
-    return (
-      <Card 
-        key={item.id}
-        item={item}
-      />
-    )
-  })
-  return (
-    <div className="cards__wrapper">
-        {cards}
-    </div>
-  )
-}
+  const cards = data.map((item) => {
+    return <Card key={item.id} item={item} />;
+  });
+  return <div className="cards__wrapper">{cards}</div>;
+};
 
-export default Experiences
+export default Experiences;
