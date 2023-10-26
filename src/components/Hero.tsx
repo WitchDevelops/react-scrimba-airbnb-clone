@@ -1,12 +1,12 @@
-import hero1 from "/src/assets/hero-1.png";
-import hero2 from "/src/assets/hero-2.png";
-import hero3 from "/src/assets/hero-3.png";
-import hero4 from "/src/assets/hero-4.png";
-import hero5 from "/src/assets/hero-5.png";
-import hero6 from "/src/assets/hero-6.png";
-import hero7 from "/src/assets/hero-7.png";
-import hero8 from "/src/assets/hero-8.png";
-import hero9 from "/src/assets/hero-9.png";
+import hero1 from "/src/assets/hero-1.webp";
+import hero2 from "/src/assets/hero-2.webp";
+import hero3 from "/src/assets/hero-3.webp";
+import hero4 from "/src/assets/hero-4.webp";
+import hero5 from "/src/assets/hero-5.webp";
+import hero6 from "/src/assets/hero-6.webp";
+import hero7 from "/src/assets/hero-7.webp";
+import hero8 from "/src/assets/hero-8.webp";
+import hero9 from "/src/assets/hero-9.webp";
 import "./Hero.css";
 
 type HeroImage =
