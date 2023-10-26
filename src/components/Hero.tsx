@@ -31,15 +31,13 @@ const Hero = () => {
     hero8,
     hero9,
   ];
-
   return (
     <div className="hero__container">
       <div className="hero__grid-container">
         <div className="grid">
           {images.map((image, index) => (
-            <div className="item">
+            <div className="item" key={index}>
               <img
-                key={index}
                 src={image}
                 alt={`hero-${index + 1}`}
                 className="content"
