@@ -27,7 +27,7 @@ const Card: React.FC<CardProps> = (props) => {
 
   return (
     <figure className="card__container">
-        <img className="card__image" src={`/src/assets/${props.item.coverImg}`}>
+        <img className="card__image" src={`${props.item.coverImg}`}>
         </img>
         {badgeText && <p className="card__badge">{badgeText}</p>}
         <figcaption className="card__info">
